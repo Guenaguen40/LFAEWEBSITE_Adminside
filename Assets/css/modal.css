@@ -1,0 +1,100 @@
+/* Modal */
+.pc-example-modal {
+    position: fixed;
+    z-index: 1099;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #282c34;
+    transform-origin: 50% 0;
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.pc-example-modal-opened {
+    overflow: hidden !important;
+}
+
+.pc-example-modal-opened .pc-example-modal {
+    transform: scale(1);
+}
+
+.pc-example-modal-content {
+    max-width: 100vw;
+    margin: auto;
+    padding: 50px;
+    height: 100vh;
+    overflow: auto;
+}
+
+.pc-example-modal-content > pre {
+    overflow: hidden;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.pc-example-modal-content > pre > code {
+    padding: 0;
+    background: none;
+    font-size: 16px;
+}
+
+.md-pc-example-modal-copy {
+    display: block;
+    position: fixed;
+    top: 90px;
+    right: 30px;
+    margin-right: 8px;
+    border-radius: 50%;
+    padding: 15px;
+    background: #7267EF;
+    color: #fff;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.md-pc-example-modal-copy:hover {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.md-pc-example-modal-copy.copied::before {
+    content: "Copied to Clipboard Successfully ! . . .";
+    position: absolute;
+    display: block;
+    right: 100%;
+    margin-right: 10px;
+    font-size: 14px;
+    background: #7267EF;
+    line-height: 24px;
+    height: 24px;
+    border-radius: 3px;
+    padding: 0 6px;
+    top: 50%;
+    margin-top: -12px;
+}
+
+.pc-example-modal-close {
+    display: block;
+    position: fixed;
+    top: 40px;
+    right: 52px;
+    color: #fff;
+    opacity: 0.2;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.pc-example-modal-close > svg {
+    width: 35px;
+    height: 35px;
+}
+
+.pc-example-modal-close:hover {
+    color: #EA4D4D;
+    opacity: 0.9;
+}

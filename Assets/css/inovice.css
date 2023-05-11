@@ -1,0 +1,80 @@
+/* ===================== Invoice page start ===================================== */
+.invoice-contact {
+    display: flex;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    .invoice-contact {
+        margin-bottom: 0;
+    }
+}
+
+.invoice-table.table td {
+    border: 0;
+    padding: 4px 0;
+}
+
+.invoive-info {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.invoive-info h6, .invoive-info .h6 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.invoive-info .invoice-order.table {
+    padding-left: 0;
+}
+
+.invoive-info .invoice-order.table th {
+    border: 0;
+    padding: 4px 0;
+}
+
+.invoive-info .invoice-order.table th:first-child {
+    padding-left: 0;
+    width: 80px;
+}
+
+.invoice-total.table {
+    background: #f3f3f3;
+    padding: 30px 0;
+}
+
+.invoice-total.table th {
+    border: 0;
+    padding: 4px 0;
+    text-align: right;
+}
+
+.invoice-total.table td {
+    text-align: right;
+}
+
+.invoice-total.table tbody {
+    padding-right: 20px;
+    float: right;
+}
+
+.invoice-summary .label {
+    border-radius: 5px;
+    padding: 3px 10px;
+    font-size: 12px;
+}
+
+.invoice-list .btn {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.invoice-list .task-list-table {
+    display: inline-block;
+}
+
+/* ===================== Invoice page end ======================================= */
+/* ==============================================================

@@ -1,0 +1,236 @@
+
+<!DOCTYPE html> 
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--app_FavIcon-->
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets\Favicon\apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets\Favicon\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets\Favicon\favicon-16x16.png">
+    <link rel="manifest" href="Assets\Favicon\site.webmanifest">
+    <title>Analytics</title>
+  <!--CSS_STYLE_ICON_LINKS-->
+    <link rel="stylesheet"  href="style1.css">
+    <link rel="stylesheet" href="inovice.html">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+     
+   </head>
+<body>
+  <!--sidebar-->
+  
+  <nav class="sidebar">
+    <div class="logo_content">
+      <div class="logo">
+        <div class="logo_name">The CraftWoman</div>
+      </div>
+      <i class='bx bx-menu' id="btn"></i>
+    </div>
+    <ul class="nav_list">
+      <li>
+         <i class='bx bx-search'></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+       <a href="Side-Bar.html">
+        <i class='bx bx-grid-alt'></i>
+        <span class="links_name">Dashboard</span>
+       </a>
+       <span class="tooltip">Dashboard</span>
+     </li>
+      <li>
+        <a href="#">
+         <i class='bi bi-arrow-clockwise'></i>
+         <span class="links_name">Update</span>
+        </a>
+        <span class="tooltip">Update</span>
+      </li>
+      <li>
+          <a href="media.html">
+              <i class="bi bi-files"></i>
+              <span class="links_name">Media</span>
+              </a>
+              <span class="tooltip">Media</span>
+          </li>
+          <li>
+           <a href="analytics.html">
+            <i class='bx bx-pie-chart-alt-2'></i>
+            <span class="links_name">Analytics</span>
+           </a>
+           <span class="tooltip">Analytics</span>
+         </li>
+      
+      <li>
+       <a href="inovice.html">
+           <i class="bi bi-coin"></i>
+           <span class="links_name">Inovice</span>
+           </a>
+           <span class="tooltip">Inovice</span>
+       </li>
+   
+       <li>
+        <a href="users.html">
+            <i class="bi bi-people"></i>
+            <span class="links_name">users</span>
+            </a>
+            <span class="tooltip">users</span>
+        </li>
+   
+   <li>
+       <a href="Prodcut.html">
+        <i class='bx bx-box'></i>
+        <span class="links_name">Product</span>
+       </a>
+       <span class="tooltip">Product</span>
+     </li>
+      <li>
+       <a href="Cataloge.html">
+         <i class="bi bi-book"></i>
+        <span class="links_name">Cataloge</span>
+       </a>
+       <span class="tooltip">Cataloge</span>
+     </li>
+
+     <li>
+       <a href="settings.html">
+        <i class='bx bx-cog'></i>
+        <span class="links_name">Settings</span>
+       </a>
+       <span class="tooltip">Settings</span>
+     </li>
+     <li class="DEVICE_410">
+       <a href="#">
+         <i class="bi bi-brightness-low"></i>
+        <span class="links_name">Brightness</span>
+       </a>
+       <span class="tooltip">Brightness</span>
+     </li>
+    </ul>
+   </nav>
+  <!--End_of_sidebar_code-->
+   <!--Start_of_Main_content-->
+
+    <man class="home_content">
+        <div class="top-nav">
+            <div class="dropdown">
+              <button class="btn-s dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                My Account
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="auth-signin.html">log out</a>
+              </div>
+            </div>
+          </div>
+<!-- [ Main Content ] start -->
+<div class="pc-container">
+  <div class="pcoded-content">
+      <!-- [ breadcrumb ] start -->
+      <div class="page-header">
+          <div class="page-block">
+              <div class="row align-items-center">
+                  <div class="col-md-12">
+                      <div class="page-header-title">
+                          <h5 class="m-b-10">Analytics</h5>
+                      </div>
+                      <ul class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="Side-Bar.html">Dashboard</a></li>
+                          <li class="breadcrumb-item"><a href="#!">Analytics</a></li>
+                          <li class="breadcrumb-item">Charts</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- [ breadcrumb ] end -->
+      <!-- [ Main Content ] start -->
+      <div class="row">
+          <!-- [ variant-chart ] start -->
+          <div class="col-md-6">
+              <div class="card">
+                  <div class="card-header">
+                      <h5>Basic line chart</h5>
+                  </div>
+                  <div class="card-body">
+                      <div id="line-chart-1"></div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="card">
+                  <div class="card-header">
+                      <h5>Area chart</h5>
+                  </div>
+                  <div class="card-body">
+                      <div id="area-chart-1"></div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="card">
+                  <div class="card-header">
+                      <h5>Bar chart</h5>
+                  </div>
+                  <div class="card-body">
+                      <div id="bar-chart-1"></div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="card">
+                  <div class="card-header">
+                      <h5>Bar chart horizontal</h5>
+                  </div>
+                  <div class="card-body">
+                      <div id="bar-chart-3"></div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-6">
+              <div class="card">
+                  <div class="card-header">
+                      <h5>Pie Charts</h5>
+                  </div>
+                  <div class="card-body">
+                      <div id="pie-chart-1" style="width:100%"></div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="card">
+                  <div class="card-header">
+                      <h5>Pie Charts donut</h5>
+                  </div>
+                  <div class="card-body">
+                      <div id="pie-chart-2" style="width:100%"></div>
+                  </div>
+              </div>
+          </div>
+          <!-- [ variant-chart ] end -->
+      </div>
+      <!-- [ Main Content ] end -->
+  </div>
+</div>
+<!-- [ Main Content ] end -->
+    </div>
+  </main>
+<script src="main.js"></script>
+  <!-- Required Js -->
+  <script src="assets/js/vendor-all.min.js"></script>
+  <script src="assets/js/plugins/bootstrap.min.js"></script>
+  <script src="assets/js/plugins/feather.min.js"></script>
+  <script src="assets/js/pcoded.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script> -->
+  <!-- <script src="assets/js/plugins/clipboard.min.js"></script> -->
+  <!-- <script src="assets/js/uikit.min.js"></script> -->
+
+<script src="assets/js/plugins/apexcharts.min.js"></script>
+<script src="assets/js/pages/chart-apex.js"></script>
+</body>
+</html>
+
